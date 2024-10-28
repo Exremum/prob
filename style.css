@@ -250,3 +250,60 @@ footer {
     margin-top: 20px;
     font-size: 0.9em;
 }
+
+/*Адаптивные стили */
+/* Планшеты и экраны меньше 768px */
+@media (max-width: 768px) {
+
+    Header {
+        Flex-direction: column;
+        Align-items: center;
+    }
+
+    Header nav {
+        Display: flex;
+        Flex-direction: column;
+        Align-items: center;
+    }
+
+    .about-section {
+        Flex-direction: column;
+    }
+
+    .about-stats {
+        Flex-direction: column;
+        Align-items: center;
+    }
+
+    .project-images img {
+        Max-width: 100px;
+    }
+}
+
+/* Мобильные устройства и экраны меньше 576px */
+
+@media (max-width: 576px) {
+
+    .about-photo img {
+        Width: 150px;
+        Height: 150px;
+    }
+
+    .stat-item h3 {
+        Font-size: 1.5em;
+    }
+
+    .contact-list {
+        Flex-direction: column;
+    }
+
+    .contact-card {
+        Width: 100%;
+    }
+
+    .button-detail {
+        Width: 100%;
+        Padding: 8px;
+    }
+
+}
