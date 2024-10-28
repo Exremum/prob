@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио</title>
+
+    <!-- Иконка сайта -->
+    <link rel="icon" href="">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+
+<!-- Шапка -->
+<header>
+    <nav>
+        <a href="#home" onclick="scrollToSection('home')">Главная</a>
+        <a href="#projects" onclick="scrollToSection('projects')">Проекты</a>
+        <a href="#skills" onclick="scrollToSection('skills')">Навыки</a>
+        <a href="#contact" onclick="scrollToSection('contact')">Контакты</a>
+    </nav>
+</header>
+
+<!-- Главная страница: секция "Обо мне" -->
+<section id="home" class="container">
+    <div class="about-section">
+
+        <!-- Фото -->
+        <div class="about-photo">
+            <img src="src/alinkola.jpg" alt="Фотография">
+        </div>
+
+        <!-- Описание и статистика -->
+        <div class="about-content">
+            <h2>Обо мне</h2>
+            <p>Меня зовут Алина, я frontеnd-разработчик. Обладаю знаниями HTML, CSS и JavaScript, а также опытом работы с современными фреймворками. Умею создавать адаптивные и интуитивно понятные пользовательские интерфейсы, обеспечивая высокую производительность.</p>
+            <div class="about-stats">
+                <div class="stat-item">
+                    <h3>15+</h3>
+                    <p>Проектов</p>
+                </div>
+                <div class="stat-item">
+                    <h3>3+</h3>
+                    <p>опыта работы</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Секция "Проекты" -->
+<section id="projects" class="container projects-section">
+    <h2>Мои проекты</h2>
+
+    <!-- Проект 1 -->
+    <div class="project-card">
+        <h3 class="project-title">ClimbMates</h3>
+        <div class="project-images">
+            <img src="src/ClimbMates/cli1.PNG" alt="Изображение 1">
+            <img src="src/ClimbMates/cli2.PNG" alt="Изображение 2">
+            <img src="src/ClimbMates/cli3.PNG" alt="Изображение 3">
+            <img src="src/ClimbMates/cli4.PNG" alt="Изображение 4">
+        </div>
+        <p class="project-description">Этот проект был сделан на заказ, он предназначен для поиска напарника для скалолазания.</p>
+        <a href="http://climbmates.ru/landing" target="_blank"><button class="button-detail" onclick="alert('Подробнее о проекте 1')">Подробнее</button></a>
+    </div>
+
+    <!-- Проект 2 -->
+    <div class="project-card">
+        <h3 class="project-title">Web-top</h3>
+        <div class="project-images">
+            <img src="src/Web-top1/reguzh.PNG" alt="Изображение 1">
+            <img src="src/Web-top1/regna.PNG" alt="Изображение 2">
+            <img src="src/Web-top1/twiter.PNG" alt="Изображение 3">
+            <img src="src/Web-top1/test.PNG" alt="Изображение 4">
+        </div>
+        <p class="project-description">Этот проект был создан для тренировки создания форм регистрации/авторизации. Мини-твиттер, в котором можно отправить сообщение получателю, или же удалить данное сообщение. А также тест, в котором можно ответить на вопросы, и он покажет количество верных и неверных ответов.</p>
+        <a href="https://exremum.github.io/Web-top1/" target="_blank"><button class="button-detail" onclick="alert('Подробнее о проекте 2')">Подробнее</button></a>
+    </div>
+</section>
+
+<!-- Секция "Навыки" -->
+<section id="skills" class="container skills-section">
+    <h2>Мои навыки</h2>
+    <div class="skills-list">
+        <div class="skill-card">HTML</div>
+        <div class="skill-card">CSS</div>
+        <div class="skill-card">JavaScript</div>
+        <div class="skill-card">Python</div>
+        <div class="skill-card">Git</div>
+    </div>
+</section>
+
+<section id="contact" class="container contact-section">
+    <h2>Мои контакты</h2>
+    <div class="contact-list">
+        <a href="https://github.com/Exremum" target="_blank" class="contact-card">GitHub</a>
+        <a href="https://vk.com/a_nikolaeva04" target="_blank" class="contact-card">VK</a>
+        <a href="https://t.me/anikola01" target="_blank" class="contact-card">Telegram</a>
+        <a href="https://discordapp.com/users/739559855043510354/" target="_blank" class="contact-card">Discord</a>
+    </div>
+</section>
+
+<!-- Подвал -->
+<footer>
+    © Alina Nikolaeva 2024-2025
+</footer>
+</body>
+</html>
