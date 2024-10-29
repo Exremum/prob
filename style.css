@@ -1,227 +1,164 @@
 /* Общие стили */
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;
 }
 
 body {
+    font-family: Arial, sans-serif;
+    color: #333;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: linear-gradient(45deg, #b286cf, #9283e4);
-    color: #333;
+    margin: 0;
+    padding: 0;
 }
 
 /* Шапка */
 header {
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #333;
     color: #fff;
-    padding: 15px 0;
-    text-align: center;
-    position: fixed;
-    top: 0;
-    z-index: 10;
-}
-
-nav a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 15px;
-    font-weight: bold;
-    transition: color 0.3s ease;
-    font-size: 15pt;
-    font-weight: 200;
-}
-
-nav a:hover {
-    color: #f7b731;
-}
-
-/* Главный контейнер */
-.container {
-    margin-top: 80px;
-    width: 90%;
-    max-width: 1200px;
-}
-
-/* Секция "Обо мне" */
-.about-section {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    padding: 50px 0;
-    text-align: center;
-}
-
-.about-photo {
-    flex: 1;
-    min-width: 200px;
-    max-width: 300px;
-    margin-right: 20px;
-}
-
-.about-photo img {
-    width: 100%;
-    height: auto;
-    border-radius: 50%;
-    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.342);
-}
-
-.about-content {
-    flex: 2;
-    min-width: 200px;
     padding: 10px;
 }
 
-.about-content h2 {
-    font-size: 3em;
-    color: #333;
-    margin-bottom: 10px;
+header nav {
+    display: flex;
+    gap: 20px;
 }
 
-.about-content p {
-    font-size: 18pt;
-    color: #353434;
-    margin-bottom: 15px;
-    font-weight: 500;
+header nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Главная секция "Обо мне" */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+.about-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.about-photo img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.about-content {
+    max-width: 500px;
+    text-align: center;
 }
 
 .about-stats {
     display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
 }
 
 .stat-item h3 {
-    font-size: 27pt;
-    color: #f7be45;
-    margin-bottom: 5px;
-    padding: 5px 0 5px;
-}
-
-.stat-item p {
-    font-size: 1em;
-    color: #ffffff;
+    font-size: 2em;
+    color: #007acc;
 }
 
 /* Секция "Проекты" */
 .projects-section {
-    padding: 50px 0;
+    padding: 20px 0;
     text-align: center;
-    font-size: 17pt;
 }
 
 .project-card {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #ffffff7c;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
     padding: 20px;
-    margin: 20px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    margin: 15px 0;
     max-width: 800px;
-    margin-left: 16%;
+    width: 100%;
 }
 
 .project-images {
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
-    margin-bottom: 20px;
+    justify-content: center;
+    margin: 10px 0;
 }
 
 .project-images img {
     width: 100%;
-    height: auto;
-    max-width: 180px;
+    max-width: 150px;
     border-radius: 5px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-.project-description {
-    font-size: 1em;
-    color: #666;
-    margin: 15px 0;
-}
-
-.project-title {
-    font-size: 17pt;
-    color: #333;
-    margin-bottom: 10px;
 }
 
 .button-detail {
-    padding: 10px 20px;
-    color: #fff;
-    background-color: #f7b731;
+    background-color: #007acc;
+    color: white;
     border: none;
+    padding: 10px 15px;
     border-radius: 5px;
     cursor: pointer;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
+    margin-top: 10px;
 }
 
 .button-detail:hover {
-    background-color: #e0a325;
+    background-color: #005f8c;
 }
 
 /* Секция "Навыки" */
 .skills-section {
-    padding: 50px 0;
+    padding: 20px 0;
     text-align: center;
-    margin-top: 0;
-}
-
-.skills-section h2 {
-    font-size: 2em;
-    color: #333;
-    margin-bottom: 30px;
 }
 
 .skills-list {
     display: flex;
     flex-wrap: wrap;
+    gap: 10px;
     justify-content: center;
-    gap: 20px;
 }
 
 .skill-card {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    width: 150px;
-    text-align: center;
+    background-color: #f0f0f0;
+    padding: 10px 15px;
+    border-radius: 5px;
     font-weight: bold;
-    color: #333;
-    transition: transform 0.3s ease;
 }
 
-.skill-card:hover {
-    transform: translateY(-5px);
-}
-
-/* Секция "Контакты" */
+/* Контактная секция */
 .contact-section {
-    padding: 50px 0;
+    padding: 20px 0;
     text-align: center;
-    margin-top: 0;
-}
-
-.contact-section h2 {
-    font-size: 2em;
-    color: #333;
-    margin-bottom: 30px;
 }
 
 .contact-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap: 15px;
 }
 
 .contact-card {
@@ -247,63 +184,23 @@ footer {
     color: #000000;
     text-align: center;
     padding: 10px 0;
-    margin-top: 20px;
     font-size: 0.9em;
+    margin-top: 20px;
 }
 
-/*Адаптивные стили */
-/* Планшеты и экраны меньше 768px */
+/* Адаптивность для всех экранов */
 @media (max-width: 768px) {
-
-    Header {
-        Flex-direction: column;
-        Align-items: center;
+    header nav {
+        flex-direction: column;
+        gap: 10px;
     }
 
-    Header nav {
-        Display: flex;
-        Flex-direction: column;
-        Align-items: center;
-    }
-
-    .about-section {
-        Flex-direction: column;
-    }
-
-    .about-stats {
-        Flex-direction: column;
-        Align-items: center;
+    .about-photo img {
+        width: 150px;
+        height: 150px;
     }
 
     .project-images img {
-        Max-width: 100px;
+        max-width: 100px;
     }
-}
-
-/* Мобильные устройства и экраны меньше 576px */
-
-@media (max-width: 576px) {
-
-    .about-photo img {
-        Width: 150px;
-        Height: 150px;
-    }
-
-    .stat-item h3 {
-        Font-size: 1.5em;
-    }
-
-    .contact-list {
-        Flex-direction: column;
-    }
-
-    .contact-card {
-        Width: 100%;
-    }
-
-    .button-detail {
-        Width: 100%;
-        Padding: 8px;
-    }
-
 }
